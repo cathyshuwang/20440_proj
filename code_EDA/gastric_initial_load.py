@@ -26,6 +26,7 @@ n = 20
 xx = list(range(n))
 
 # look at one replicate per disease for now
+fig = plt.figure()
 plt.bar(xx, gastric_df['NC1 Log2'][0:n], alpha=0.3);
 plt.bar(xx, gastric_df['PL1 Log2'][0:n], alpha=0.3);
 plt.bar(xx, gastric_df['GC1 Log2'][0:n], alpha=0.3);
@@ -33,3 +34,4 @@ plt.legend(['NC', 'PL', 'GC'], loc='best');
 plt.ylim([13,22]);
 plt.xlabel('Protein index')
 plt.ylabel('Log2 expression level');
+fig.savefig('prelim_gastric.png')
