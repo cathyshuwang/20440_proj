@@ -27,13 +27,14 @@ doi: 10.1101/2020.06.08.140426.
 	- raw/
 		- raw dataset, entire spreadsheet files
 	- processed/ 
-		- (will) contain cleaned/relevant lines of data from original datasets
+		- cleaned/relevant lines of data from original datasets (currently includes
+		different usable versions of gastric data) 
 - figures
-	- results from plotting (currently, one preliminary figure of protein expression of 
-	one set of gastric data) 
+	- results from plotting (currently, one preliminary figure of subset of average protein 
+	expression of gastric data) 
 
 ## Installation/Usage 
 Packages used include pandas (1.1.2), numpy (1.19.2), and matplotlib (3.3.2). You can run 
-Python (v3.8.3) files in an IDE and generate associated figures, after making sure the data 
+Python (v3.8.3) files in an IDE and generate associated figure(s), after making sure the data 
 files are in the same folder as your script. Jupyter Notebook or Conda may be needed to run 
-.ipynb files.
+.ipynb files and may need to be edited to save cleaned data/csv files in desired locations. 
